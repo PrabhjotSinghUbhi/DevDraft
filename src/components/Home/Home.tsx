@@ -38,13 +38,13 @@ function Home() {
         setFilteredPosts(
             posts.filter((post) => (((post.body).toLowerCase()).includes(search.toLowerCase()) || (post.title.toLowerCase()).includes(search.toLowerCase())))
         )
-    }, [search,posts])
+    }, [search, posts])
 
     const navigator = useNavigate()
 
     return (
         (posts.length === 0) ?
-            (<section className="flex flex-col m-20 items-center justify-center w-full max-w-xl min-h-[40vh] mx-auto px-4 py-6 bg-white rounded-xl shadow-sm">
+            (<section className="flex flex-col justify-center m-20 items-center   mx-auto w-[9/10] max-w-xl min-h-[40vh] px-4 py-6 bg-white rounded-xl shadow-sm">
                 <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-full p-4 mb-4">
                     <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -56,7 +56,9 @@ function Home() {
                     It looks like there are no articles published yet. Start writing to share your knowledge and inspire others!
                 </p>
 
-                <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-lg hover:shadow-xl hover:scale-105 transition-all duration-200 font-medium cursor-pointer">
+                <button className="cursor-pointer bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-lg hover:shadow-xl hover:scale-105 transition-all duration-200 font-medium "
+                    onClick={() => (navigator('./add-post'))}
+                >
                     Write your first article
                 </button>
             </section>
