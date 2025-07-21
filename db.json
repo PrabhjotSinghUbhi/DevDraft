@@ -1,3 +1,10 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "id": "yZWd9npwzZd7Ie2Z6Npx3",
+      "datetime": "Mon, 21 Jul 2025 16:07:12 GMT",
+      "title": "how to import a gsap library? - Prabhjot Singh",
+      "body": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js\" integrity=\"sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\"></script>"
+    }
+  ]
 }

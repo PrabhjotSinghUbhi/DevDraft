@@ -3,17 +3,12 @@ import { Input } from "../ui/input"
 import { Button } from "../ui/button"
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "../ui/sheet"
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "../ui/navigation-menu"
-import { useState } from "react"
 import { useDispatch } from "react-redux"
 import { updateSearch } from "../../slice/searchSlice"
-import { Cross, HandMetal, Menu } from "lucide-react"
-import { Close } from "@radix-ui/react-dialog"
+import { Menu } from "lucide-react"
 
 const navItems = ["Home", "Articles", "Tutorials", "About", "Contact"]
 function Header() {
-
-    // const [search, setSearch] = useState('')
-    // const [searchResult, setSearchResult] = useState([])
 
     const dispatch = useDispatch()
     const navigator = useNavigate()

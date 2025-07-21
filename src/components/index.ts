@@ -10,6 +10,7 @@ import SignUp from "./SignUp/SignUp";
 import Missing from "./Missing/Missing";
 import PostForm from "./PostForm/PostForm";
 import EditPost from "./EditPost/EditPost";
+import Loading from "./Loading/Loading";
 
 export {
     Header,
@@ -23,5 +24,6 @@ export {
     SignUp,
     Missing,
     PostForm,
-    EditPost
+    EditPost,
+    Loading
 }
